@@ -104,7 +104,7 @@
 			children = (
 				B8A2EA1B2B078F8A0081AA82 /* GenericHTTPClientApp.swift */,
 				B8A2EA1D2B078F8A0081AA82 /* ContentView.swift */,
-				B8A2EA452B078FB70081AA82 /* HTTPClient.swift */,
+				B8D79A7C2B07BC7F0026FB35 /* ApiService */,
 				B8D79A792B07A8B70026FB35 /* Model */,
 				B8D79A782B07A8AD0026FB35 /* ViewModel */,
 				B8A2EA1F2B078F8C0081AA82 /* Assets.xcassets */,
@@ -152,6 +152,14 @@
 				B8A2EA4A2B07986F0081AA82 /* myModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B8D79A7C2B07BC7F0026FB35 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				B8A2EA452B078FB70081AA82 /* HTTPClient.swift */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
