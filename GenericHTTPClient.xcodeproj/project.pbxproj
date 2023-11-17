@@ -14,6 +14,10 @@
 		B8A2EA2D2B078F8C0081AA82 /* GenericHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2EA2C2B078F8C0081AA82 /* GenericHTTPClientTests.swift */; };
 		B8A2EA372B078F8C0081AA82 /* GenericHTTPClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2EA362B078F8C0081AA82 /* GenericHTTPClientUITests.swift */; };
 		B8A2EA392B078F8C0081AA82 /* GenericHTTPClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2EA382B078F8C0081AA82 /* GenericHTTPClientUITestsLaunchTests.swift */; };
+		B8A2EA462B078FB70081AA82 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2EA452B078FB70081AA82 /* HTTPClient.swift */; };
+		B8A2EA492B07969E0081AA82 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B8A2EA482B07969E0081AA82 /* SwiftKeychainWrapper */; };
+		B8A2EA4B2B07986F0081AA82 /* myModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2EA4A2B07986F0081AA82 /* myModel.swift */; };
+		B8D79A7B2B07A8D60026FB35 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D79A7A2B07A8D60026FB35 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		B8A2EA322B078F8C0081AA82 /* GenericHTTPClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericHTTPClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A2EA362B078F8C0081AA82 /* GenericHTTPClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPClientUITests.swift; sourceTree = "<group>"; };
 		B8A2EA382B078F8C0081AA82 /* GenericHTTPClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8A2EA452B078FB70081AA82 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		B8A2EA4A2B07986F0081AA82 /* myModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myModel.swift; sourceTree = "<group>"; };
+		B8D79A7A2B07A8D60026FB35 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A2EA492B07969E0081AA82 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,9 @@
 			children = (
 				B8A2EA1B2B078F8A0081AA82 /* GenericHTTPClientApp.swift */,
 				B8A2EA1D2B078F8A0081AA82 /* ContentView.swift */,
+				B8A2EA452B078FB70081AA82 /* HTTPClient.swift */,
+				B8D79A792B07A8B70026FB35 /* Model */,
+				B8D79A782B07A8AD0026FB35 /* ViewModel */,
 				B8A2EA1F2B078F8C0081AA82 /* Assets.xcassets */,
 				B8A2EA212B078F8C0081AA82 /* Preview Content */,
 			);
@@ -127,6 +138,22 @@
 			path = GenericHTTPClientUITests;
 			sourceTree = "<group>";
 		};
+		B8D79A782B07A8AD0026FB35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B8D79A7A2B07A8D60026FB35 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B8D79A792B07A8B70026FB35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8A2EA4A2B07986F0081AA82 /* myModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +170,9 @@
 			dependencies = (
 			);
 			name = GenericHTTPClient;
+			packageProductDependencies = (
+				B8A2EA482B07969E0081AA82 /* SwiftKeychainWrapper */,
+			);
 			productName = GenericHTTPClient;
 			productReference = B8A2EA182B078F8A0081AA82 /* GenericHTTPClient.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +245,9 @@
 				Base,
 			);
 			mainGroup = B8A2EA0F2B078F8A0081AA82;
+			packageReferences = (
+				B8A2EA472B07969E0081AA82 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = B8A2EA192B078F8A0081AA82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D79A7B2B07A8D60026FB35 /* ViewModel.swift in Sources */,
 				B8A2EA1E2B078F8A0081AA82 /* ContentView.swift in Sources */,
 				B8A2EA1C2B078F8A0081AA82 /* GenericHTTPClientApp.swift in Sources */,
+				B8A2EA462B078FB70081AA82 /* HTTPClient.swift in Sources */,
+				B8A2EA4B2B07986F0081AA82 /* myModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8A2EA472B07969E0081AA82 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8A2EA482B07969E0081AA82 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8A2EA472B07969E0081AA82 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8A2EA102B078F8A0081AA82 /* Project object */;
 }
